@@ -1,0 +1,108 @@
+:root{
+    --board: rgb(245, 245, 168)
+}
+body{
+    background-image: url(bg.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.panel{
+    position: absolute;
+    background-color: var(--board);
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    width: max-content;
+    box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.3);
+}
+.Header{
+    display: flex;
+    left:50%;
+    top: 150px;;
+    font-size: large;
+    margin-left:-95px;
+    height: max-content;
+    width: 150px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0.85;
+}
+.header-text{
+    font-style: oblique;
+    font-weight: 700;
+    color: rgb(48, 6, 88);
+}
+.Footer{
+    display: flex;
+    left:50%;
+    top: 600px;
+    font-size: 20px;
+    margin-left:-130px;
+    height: max-content;
+    padding: 6px;
+    width: 220px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0.85;
+}
+.Footer button:hover{
+    color: rgb(255, 0, 0);
+    background-color: var(--board);
+    cursor: pointer;
+}
+.footer-text{
+    padding: 3px 6px;
+    font-size: large;
+    width: max-content;
+    color: aliceblue;
+    background-color: red;
+    font-style: oblique;
+    font-weight: 700;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    padding-left: 3px;
+    margin-left: 3px;
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    position:absolute;
+    width:400px;
+    padding:20px;
+    left:50%;
+    top:25%;
+    margin-left:-230px;
+    background-image: url(bgB.svg);
+    opacity:0.9;
+    border: 6px solid rgb(255, 0, 0);
+    border-radius: 30px;
+    box-shadow: 0px 0px 9px 9px rgba(0,0,0,0.3);
+    z-index: 0;
+}
+.gameCircle{
+    margin:10px;
+    border-radius:50%;
+    height:70px;
+    width:70px;
+    border: 3px solid black;
+}
+.gameCircle :hover{
+    cursor: alias;
+}
+.player_0{
+    background-color: white;
+}
+.player_1{
+    background-color: red;
+}
+.player_2{
+    background-color: blue;
+}
